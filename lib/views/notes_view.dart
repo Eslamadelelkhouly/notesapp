@@ -16,11 +16,11 @@ class NotesView extends StatelessWidget {
             ),
             context: context,
             builder: (context) {
-              return AddNoteButtonSheet();
+              return const AddNoteButtonSheet();
             },
           );
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
         backgroundColor: Colors.cyan,
       ),
       body: const NotesViewBody(),
