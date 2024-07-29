@@ -22,22 +22,14 @@ class CustomButton extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: 55,
         child: Center(
-          child: isLoading
-              ? SizedBox(
-                  height: 24,
-                  width: 24,
-                  child: const CircularProgressIndicator(
-                    color: Colors.black,
-                  ),
-                )
-              : const Text(
-                  'Add',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+          child: const Text(
+            'Add',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );

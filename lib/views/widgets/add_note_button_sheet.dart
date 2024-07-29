@@ -29,17 +29,14 @@ class _AddNoteButtonSheetState extends State<AddNoteButtonSheet> {
           }
         },
         builder: (context, state) {
-          return AbsorbPointer(
-            absorbing: state is AddNoteState ? true : false,
-            child: Padding(
-              padding: EdgeInsets.only(
-                left: 16,
-                right: 16,
-                bottom: MediaQuery.of(context).viewInsets.bottom,
-              ),
-              child: const SingleChildScrollView(
-                child: const AddNoteForm(),
-              ),
+          return Padding(
+            padding: EdgeInsets.only(
+              left: 16,
+              right: 16,
+              bottom: MediaQuery.of(context).viewInsets.bottom,
+            ),
+            child: const SingleChildScrollView(
+              child: const AddNoteForm(),
             ),
           );
         },
