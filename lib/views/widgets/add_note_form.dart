@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:notesapp/cubits/add_note_cubit/add_note_cubit.dart';
@@ -38,7 +37,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
             },
             hint: 'title',
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           CustomTextField(
             onSaved: (value) {
               subtitle = value;
@@ -46,7 +45,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
             hint: 'content',
             maxline: 5,
           ),
-          SizedBox(
+          const SizedBox(
             height: 32,
           ),
           BlocBuilder<AddNoteCubit, AddNoteState>(
@@ -73,7 +72,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
               );
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
         ],
